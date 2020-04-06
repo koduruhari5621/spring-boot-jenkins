@@ -9,8 +9,6 @@ WORKDIR /src
 
 COPY target/demo-service-0.0.1-SNAPSHOT.jar /src/demo-service-0.0.1-SNAPSHOT.jar
 
-EXPOSE 8098
-
 RUN sh -c 'touch /src/demo-service-0.0.1-SNAPSHOT.jar'
 
 ENTRYPOINT ["java","-jar","/src/demo-service-0.0.1-SNAPSHOT.jar"]
